@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Vladyslava Ishchuk</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.9001 2.30719C19.7392 1.8976 19.1616 1.8976 19.0007 2.30719L18.5703 3.40247C18.5212 3.52752 18.4226 3.62651 18.298 3.67583L17.2067 4.1078C16.7986 4.26934 16.7986 4.849 17.2067 5.01054L18.298 5.44252C18.4226 5.49184 18.5212 5.59082 18.5703 5.71587L19.0007 6.81115C19.1616 7.22074 19.7392 7.22074 19.9001 6.81116L20.3305 5.71587C20.3796 5.59082 20.4782 5.49184 20.6028 5.44252L21.6941 5.01054C22.1022 4.849 22.1022 4.26934 21.6941 4.1078L20.6028 3.67583C20.4782 3.62651 20.3796 3.52752 20.3305 3.40247L19.9001 2.30719Z"/>
+                    <path d="M16.0328 8.12967C15.8718 7.72009 15.2943 7.72009 15.1333 8.12967L14.9764 8.52902C14.9273 8.65407 14.8287 8.75305 14.7041 8.80237L14.3062 8.95987C13.8981 9.12141 13.8981 9.70107 14.3062 9.86261L14.7041 10.0201C14.8287 10.0694 14.9273 10.1684 14.9764 10.2935L15.1333 10.6928C15.2943 11.1024 15.8718 11.1024 16.0328 10.6928L16.1897 10.2935C16.2388 10.1684 16.3374 10.0694 16.462 10.0201L16.8599 9.86261C17.268 9.70107 17.268 9.12141 16.8599 8.95987L16.462 8.80237C16.3374 8.75305 16.2388 8.65407 16.1897 8.52902L16.0328 8.12967Z"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                </svg>
+            </span>
+            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+                <!-- сюда SVG солнца -->
+            </span>
+        </button>
+
+        <main>
+            <span id="top"></span>
+            <section class="hero">
+                <div class="hero__content">
+                    <h1 class="hero__title">Portfolio</h1>
+                    <h2 class="hero__subtitle">Vladyslava Ishchuk - Fullstack Developer</h2>
+                    <nav class="hero__nav">
+                        <ul class="hero__nav-list">
+                            <li class="hero__nav-item"><a href="#about" class="hero__nav-link">About Me</a></li>
+                            <li class="hero__nav-item"><a href="#stack" class="hero__nav-link">My Stack</a></li>
+                            <li class="hero__nav-item"><a href="#projects" class="hero__nav-link">My Projects</a></li>
+                            <li class="hero__nav-item"><a href="#contact" class="hero__nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about__content">
+                    <h2 class="about__title">About Me</h2>
+                    <h3 class="about__subtitle">Hi, I'm Vladyslava Ishchuk, a fullstack developer.</h3>
+                    <p class="about__text">Motivated developer with solid knowledge of web technologies, hands-on experience from team projects and one year of commercial work on real products, including custom WordPress plugins and shortcodes and site deployment with Cloudflare.
+Detail-oriented, quick to learn and focused on clean, working solutions. Currently open to new opportunities.</p>
+                    <a href="files/Vladyslava-Ishchuk-Resume.pdf" target="_blank" class="btn">View My Resume</a>
+                </div>
+            </section>
+
+                <section class="stack" id="stack">
+                    <div class="stack__content">
+                        <h2 class="stack__title">My Stack</h2>
+                        <div class="stack-group">
+                            <div class="stack-group__item">
+                                <h3 class="stack-group__title">Frontend</h3>
+                                <ul class="stack-group__list">
+                                    <li class="stack-group__list-item">HTML</li>
+                                    <li class="stack-group__list-item">CSS</li>
+                                    <li class="stack-group__list-item">JavaScript</li>
+                                    <li class="stack-group__list-item">TypeScript</li>
+                                    <li class="stack-group__list-item">React</li>
+                                    <li class="stack-group__list-item">Next.js</li>
+                                    <li class="stack-group__list-item">TanStack Query</li>
+                                    <li class="stack-group__list-item">Formik</li>
+                                </ul>
+                            </div>
+
+                            <div class="stack-group__item">
+                                <h3 class="stack-group__title">Backend</h3>
+                                <ul class="stack-group__list">
+                                    <li class="stack-group__list-item">Node.js</li>
+                                    <li class="stack-group__list-item">MongoDB</li>
+                                    <li class="stack-group__list-item">REST API</li>
+                                </ul>
+                            </div>
+
+                            <div class="stack-group__item">
+                                <h3 class="stack-group__title">Other Tools</h3>
+                                <ul class="stack-group__list">
+                                    <li class="stack-group__list-item">Git & GitHub</li>
+                                    <li class="stack-group__list-item">GitHub Actions</li>
+                                    <li class="stack-group__list-item">Vite</li>
+                                    <li class="stack-group__list-item">Cloudflare</li>
+                                    <li class="stack-group__list-item">DNS</li>
+                                    <li class="stack-group__list-item">ISPmanager</li>
+                                    <li class="stack-group__list-item">WordPress (custom plugins, shortcodes)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="projects" id="projects">
+                    <div class="projects__content">
+                        <h2 class="projects__title">My Projects</h2>
+                        <button class="slider-btn slider-btn--prev" type="button" aria-label="Previous project">‹</button>
+                        <div class="projects__list">
+                            <div class="projects__item">
+                                <img class="projects__item-image" src="src/images/clothica.webp" alt="Clothica online clothing store homepage" width="1600" height="1000" loading="lazy">
+                                <h3 class="projects__item-title">Clothica: fullstack, team project</h3>
+                                <p class="projects__item-description">A full-stack clothing marketplace with authentication, shopping cart, product catalog with categories and customer reviews. Built by a team with Next.js and TypeScript on the frontend and a separate Node.js backend.</p>
+                                <p class="projects-item-part">
+                                    <strong>My part:</strong> the site footer as a reusable React component with CSS Modules.</p>
+                                    <ul class="projects-item-tags">
+                                        <li>Next.js</li>
+                                        <li>TypeScript</li>
+                                        <li>TanStack Query</li>
+                                        <li>Zustand</li>
+                                    </ul>
+                                    <div class="projects-item-links">
+                                        <a href="https://last-super-project-group-03-front.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">Demo</a>
+                                        <a href="https://github.com/codingweb123/last-super-project-group-03-front" target="_blank" rel="noopener noreferrer" class="btn">Code</a>
+                                    </div>
+                                </div>
+                            <div class="projects__item">
+                                <img class="projects__item-image" src="src/images/booksy.webp" alt="Booksy bookstore website homepage" width="1600" height="1000" loading="lazy">
+                                <h3 class="projects__item-title">Booksy: HTML, CSS, JavaScript, team project</h3>
+                                <p class="projects__item-description">A bookstore website with a dynamic catalog loaded from an external API, category filtering, feedback and events sliders.</p>
+                                <p class="projects-item-part">
+                                    <strong>My part:</strong> the Location section — responsive layout, styling and SVG icons.</p>
+                                <p class="projects-item-note">Note: the external books API is no longer available.</p>
+                                    <ul class="projects-item-tags">
+                                        <li>JavaScript</li>
+                                        <li>Vite</li>
+                                        <li>Axios</li>
+                                        <li>Swiper</li>
+                                    </ul>
+                                    <div class="projects-item-links">
+                                        <a href="https://dimalux.github.io/GreatLoom/" target="_blank" rel="noopener noreferrer" class="btn">Demo</a>
+                                        <a href="https://github.com/Dimalux/GreatLoom" target="_blank" rel="noopener noreferrer" class="btn">Code</a>
+                                    </div>
+                                </div>
+                            <div class="projects__item">
+                                <img class="projects__item-image" src="src/images/yachtjet.webp" alt="YachtJet yacht rental landing page" width="1600" height="1000" loading="lazy">
+                                <h3 class="projects__item-title">YachtJet: HTML, CSS, team project</h3>
+                                <p class="projects__item-description">A responsive landing page for a luxury yacht rental service with a fleet overview and detailed yacht cards.</p>
+                                <p class="projects-item-part">
+                                    <strong>My part:</strong> the site header — markup and responsive styling.</p>
+                                    <ul class="projects-item-tags">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Vite</li>
+                                    </ul>
+                                    <div class="projects-item-links">
+                                        <a href="https://festbc.github.io/project-first-teamwork/" target="_blank" rel="noopener noreferrer" class="btn">Demo</a>
+                                        <a href="https://github.com/FestBC/project-first-teamwork" target="_blank" rel="noopener noreferrer" class="btn">Code</a>
+                                    </div>
+                                </div>
+                            <div class="projects__item">
+                                <img class="projects__item-image" src="src/images/book-manager.webp" alt="Book Manager plugin: list of books with author, year and rating" width="1600" height="1000" loading="lazy">
+                                <h3 class="projects__item-title">Book Manager: WordPress plugin, solo project</h3>
+                                <p class="projects__item-description">A WordPress plugin for managing a book library: a custom “Books” post type, an admin meta box for author, publication year and rating, and a [book_list] shortcode with pagination, plus custom theme templates for the book pages.</p>
+                                <p class="projects-item-part">
+                                    <strong>My part:</strong> the whole project — my first plugin, built with an OOP structure and WordPress security practices (nonces, sanitization, escaping).</p>
+                                    <ul class="projects-item-tags">
+                                        <li>PHP</li>
+                                        <li>WordPress</li>
+                                        <li>Shortcodes</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                    <div class="projects-item-links">
+                                        <a href="https://github.com/qwijhxs/wordpress-book-manager-project" target="_blank" rel="noopener noreferrer" class="btn">Code</a>
+                                    </div>
+                                </div>
+                            <!-- Add more projects as needed -->
+                        </div>
+                        <button class="slider-btn slider-btn--next" type="button" aria-label="Next project">›</button>
+                    </div>
+                </section>
+                <section class="contact" id="contact">
+                    <div class="contact__content">
+                        <h2 class="contact__title">Contact</h2>
+                        <h3 class="contact__text">Open to new opportunities. Let’s talk.</h3>
+                        <a href="mailto:ischukvladislava6@gmail.com" class="contact__email">ischukvladislava6@gmail.com</a>
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <a href="https://www.linkedin.com/in/vladyslava-ishchuk/" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="LinkedIn">
+                                    <svg class="contact__icon" width="32" height="32" viewBox="0 0 382 382" fill="currentColor" aria-hidden="true"><path d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.140-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"/></svg>
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a href="https://github.com/qwijhxs" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="GitHub">
+                                    <svg class="contact__icon" width="32" height="32" viewBox="0 -0.5 25 25" fill="currentColor" aria-hidden="true"><path d="m12.301 0h.093c2.242 0 4.34.613 6.137 1.68l-.055-.031c1.871 1.094 3.386 2.609 4.449 4.422l.031.058c1.04 1.769 1.654 3.896 1.654 6.166 0 5.406-3.483 10-8.327 11.658l-.087.026c-.063.02-.135.031-.209.031-.162 0-.312-.054-.433-.144l.002.001c-.128-.115-.208-.281-.208-.466 0-.005 0-.01 0-.014v.001q0-.048.008-1.226t.008-2.154c.007-.075.011-.161.011-.249 0-.792-.323-1.508-.844-2.025.618-.061 1.176-.163 1.718-.305l-.076.017c.573-.16 1.073-.373 1.537-.642l-.031.017c.508-.28.938-.636 1.292-1.058l.006-.007c.372-.476.663-1.036.84-1.645l.009-.035c.209-.683.329-1.468.329-2.281 0-.045 0-.091-.001-.136v.007c0-.022.001-.047.001-.072 0-1.248-.482-2.383-1.269-3.23l.003.003c.168-.44.265-.948.265-1.479 0-.649-.145-1.263-.404-1.814l.011.026c-.115-.022-.246-.035-.381-.035-.334 0-.649.078-.929.216l.012-.005c-.568.21-1.054.448-1.512.726l.038-.022-.609.384c-.922-.264-1.981-.416-3.075-.416s-2.153.152-3.157.436l.081-.02q-.256-.176-.681-.433c-.373-.214-.814-.421-1.272-.595l-.066-.022c-.293-.154-.64-.244-1.009-.244-.124 0-.246.01-.364.03l.013-.002c-.248.524-.393 1.139-.393 1.788 0 .531.097 1.04.275 1.509l-.01-.029c-.785.844-1.266 1.979-1.266 3.227 0 .025 0 .051.001.076v-.004c-.001.039-.001.084-.001.13 0 .809.12 1.591.344 2.327l-.015-.057c.189.643.476 1.202.85 1.693l-.009-.013c.354.435.782.793 1.267 1.062l.022.011c.432.252.933.465 1.46.614l.046.011c.466.125 1.024.227 1.595.284l.046.004c-.431.428-.718 1-.784 1.638l-.001.012c-.207.101-.448.183-.699.236l-.021.004c-.256.051-.549.08-.85.08-.022 0-.044 0-.066 0h.003c-.394-.008-.756-.136-1.055-.348l.006.004c-.371-.259-.671-.595-.881-.986l-.007-.015c-.198-.336-.459-.614-.768-.827l-.009-.006c-.225-.169-.49-.301-.776-.38l-.016-.004-.32-.048c-.023-.002-.05-.003-.077-.003-.14 0-.273.028-.394.077l.007-.003q-.128.072-.08.184c.039.086.087.16.145.225l-.001-.001c.061.072.13.135.205.19l.003.002.112.08c.283.148.516.354.693.603l.004.006c.191.237.359.505.494.792l.01.024.16.368c.135.402.38.738.7.981l.005.004c.3.234.662.402 1.057.478l.016.002c.33.064.714.104 1.106.112h.007c.045.002.097.002.15.002.261 0 .517-.021.767-.062l-.027.004.368-.064q0 .609.008 1.418t.008.873v.014c0 .185-.08.351-.208.466h-.001c-.119.089-.268.143-.431.143-.075 0-.147-.011-.214-.032l.005.001c-4.929-1.689-8.409-6.283-8.409-11.69 0-2.268.612-4.393 1.681-6.219l-.032.058c1.094-1.871 2.609-3.386 4.422-4.449l.058-.031c1.739-1.034 3.835-1.645 6.073-1.645h.098-.005z"/></svg>
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a href="https://t.me/qwijhxs" target="_blank" rel="noopener noreferrer" class="contact__link" aria-label="Telegram">
+                                    <svg class="contact__icon" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copy">© <span id="year">2026</span> Vladyslava Ishchuk</p>
+            <a href="https://github.com/qwijhxs/portfolio" target="_blank" rel="noopener noreferrer" class="footer__source">Source code</a>
+            <a href="#top" class="footer__back-to-top">Back to the top</a>
+        </footer>
+    </body>
+</html>

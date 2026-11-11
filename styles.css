@@ -1,0 +1,74 @@
+:root {
+    --color-milk: #fffcf6;
+    --color-black: #000000;
+    --color-terracotta: #c16d64;
+    --color-peach: #eeaa6d; 
+    --color-orange: #d87b3b;
+    --bg-color: var(--color-milk);
+    --bg-image: url("src/images/bg-light.webp");
+    --text-color: var(--color-black);
+    --border-color: var(--color-black);
+}
+
+body.dark {
+    --bg-color: var(--color-terracotta);
+    --bg-image: url("src/images/bg-dark.webp");
+    --text-color: var(--color-milk);
+    --border-color: var(--color-milk);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Archivo", sans-serif;
+    font-stretch: 125%;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: left center;
+}
+
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.theme-toggle svg {
+    width: 28px;
+    height: 28px;
+}
+
+.theme-toggle__icon--sun,
+body.dark .theme-toggle__icon--moon {
+    display: none;
+}
+
+body.dark .theme-toggle__icon--sun {
+    display: block;
+}

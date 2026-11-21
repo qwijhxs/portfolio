@@ -21,7 +21,7 @@ themeToggle.addEventListener("click", () => {
     } catch (e) {}
 });
 
-const navList = document.querySelector(".hero_nav-list");
+const navList = document.querySelector(".hero__nav-list");
 const NAV_TOP = 14;
 const SHRINK_DISTANCE = 250;
 
@@ -48,15 +48,15 @@ window.addEventListener("resize", measureNav);
 document.fonts.ready.then(measureNav);
 measureNav();
 
-const list = document.querySelector(".projects_list");
+const list = document.querySelector(".projects__list");
 const prevBtn = document.querySelector(".slider-btn--prev");
 const nextBtn = document.querySelector(".slider-btn--next");
-const originals = [...list.querySelectorAll(".projects_item")];
+const originals = [...list.querySelectorAll(".projects__item")];
 
 function makeClone(item) {
     const clone = item.cloneNode(true);
     clone.setAttribute("aria-hidden", "true");
-    clone.querySelectorAll("a").forEach((a) => a.removeAttribute("tabindex", "-1"));
+    clone.querySelectorAll("a").forEach((a) => a.setAttribute("tabindex", "-1"));
     return clone;
 }
 
@@ -64,7 +64,7 @@ originals.forEach((item) => list.append(makeClone(item)));
 [...originals].reverse().forEach((item) => list.prepend(makeClone(item)));
 
 function cardStep() {
-    const card = list.querySelector(".projects_item");
+    const card = list.querySelector(".projects__item");
     const gap = parseFloat(getComputedStyle(list).gap) || 0;
     return card.offsetWidth + gap;
 }
